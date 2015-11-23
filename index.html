@@ -2,72 +2,30 @@
 layout: index
 title: JAVA技术相关
 ---
-　　<p>{{ page.title }}</p>
-　　<ul>
-　　　　{% for post in site.posts %}
-　　　　　　<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>{{ post.date | date_to_string }}</li>
-　　　　{% endfor %}
-　　</ul>
-
 <!-- content -->
 	<div class="content">
 	<div class="container">
 		<div class="content-text">	
 			<div class="title">
+				{% for post in site.posts %}
 				<div class="some-title">
-					<h3><a href="single.html">Some Tittle Goes Here</a></h3>
+					<h3><a href="single.html">{{post.title}}</a></h3>
 				</div>
 				<div class="john">
-					<p><a href="#">John Doe</a><span>May.26.2011</span></p>
+					<p><a href="#">Mr.x</a><span>{{post.date|date_to_string}}</span></p>
 				</div>
 				<div class="clearfix"> </div>
 				<div class="tilte-grid">
-					<a href="single.html"><img src="images/1.jpg" alt=" " /></a>
-					<p class="vel"><a href="single.html">Phasellus vel arcu vitae neque sagittis aliquet ac at purus.
-					Vestibulum varius eros in dui sagittis non ultrices orci hendrerit.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</a></p>
-					<p class="Sed">
-					<span><label>Sed euismod feugiat sodales.</label> Vivamus dui ipsum, laoreet 
-					vitae euismod sit amet, euismod ac est. Sed turpis massa,
-					convallis vitae facilisis eget, malesuada ullamcorper nibh. 
-					Nunc pulvinar augue non felis dictum ultricies. Donec lacinia, 
-					enim sit amet volutpat sodales, lorem velit fringilla metus, et
-					semper metus sapien non odio. Nulla facilisi.<a href="#" class="gravida">Praesent gravida suscipit leo,</a> 
-					eget fermentum magna malesuada ac. Maecenas pulvinar malesuada elementum.</span></p> 
+					{{post.content}}
 				</div>
 				<div class="read">
-					<a href="single.html">Read More</a>
+					<a href="single.html">更多</a>
 				</div>
 				<div class="border">
 					<p>a</p>
 				</div>
-				<div class="some-title">
-					<h3><a href="single.html">Some Tittle Goes Here</a></h3>
-				</div>
-				<div class="john">
-					<p><a href="#">John Doe</a><span>May.26.2011</span></p>
-				</div>
+				{% endfor %}
 				<div class="clearfix"> </div>
-				<div class="tilte-grid">
-					<a href="single.html"><img src="images/2.jpg" alt=" " /></a>
-					<p class="vel"><a href="single.html">Phasellus vel arcu vitae neque sagittis aliquet ac at purus.
-					Vestibulum varius eros in dui sagittis non ultrices orci hendrerit.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
-					<p class="Sed"><span><label>Sed euismod feugiat sodales.</label> Vivamus dui ipsum, laoreet 
-					vitae euismod sit amet, euismod ac est. Sed turpis massa,
-					convallis vitae facilisis eget, malesuada ullamcorper nibh. 
-					Nunc pulvinar augue non felis dictum ultricies. Donec lacinia, 
-					enim sit amet volutpat sodales, lorem velit fringilla metus, et
-					semper metus sapien non odio. Nulla facilisi.<a href="#" class="gravida">Praesent gravida suscipit leo,</a> 
-					eget fermentum magna malesuada ac. Maecenas pulvinar malesuada elementum.</span></p> 
-				</div>
-				<div class="read">
-					<a href="single.html">Read More</a>
-				</div>
-				<div class="border1">
-					<div class="clearfix"> </div>
-				</div>
 			</div>
 			
 			<div class="categories">
