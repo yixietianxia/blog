@@ -65,6 +65,22 @@
 				<div class="clearfix"> </div>
 			</div>
 			<div class="clearfix"> </div>
+			
+			
+			<div class="categories">
+				<div class="categ">
+					<div class="cat">
+						<h3>JAVA技术</h3>
+						<ul>
+							{% for post in site.posts %}
+　　　　　　						<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　						{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			
 		</div>
 	</div>
 	</div>
