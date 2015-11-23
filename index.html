@@ -9,7 +9,7 @@ title: JAVA技术相关
 			<div class="title">
 				{% for post in site.posts %}
 				<div class="some-title">
-					<h3><a href="single.html">{{post.title}}</a></h3>
+					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
 				</div>
 				<div class="john">
 					<p><a href="#">Mr.x</a><span>{{post.date|date_to_string}}</span></p>
@@ -41,7 +41,7 @@ title: JAVA技术相关
 					<div class="recent-com">
 						<h3>技术沉淀</h3>
 						<ul>
-							{% for post in site.post2s %}
+							{% for post in site.post.cd %}
 　　　　　　						<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　　　						{% endfor %}
 						</ul>
