@@ -51,7 +51,8 @@
 						<h3>JAVA技术</h3>
 						<ul>
 							{% for post in site.posts %}
-								{% if post.category == "java"%}
+							{{page}}
+								{% if post.category == page.category%}
 									<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 								{% endif %} 
 　　　　						{% endfor %}
