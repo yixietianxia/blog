@@ -13,7 +13,7 @@ title: 关于我
 						<ul>
 							{% for post in site.posts %}
 								{% if post.category == "db"%}
-　　　　　　							<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span style="padding-left: 50%;">{{post.date}}</span></li>
+　　　　　　							<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span style="padding-left: 50%;">{{post.date|"yyyy-MM-dd"}}</span></li>
 　　　　							{% endif %}
 							{% endfor %}
 						</ul>
