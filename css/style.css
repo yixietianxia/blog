@@ -75,7 +75,7 @@ padding:0;
 	border-top-left-radius:5px;
 	border-bottom-left-radius:5px;
 	}
-.logo-right ul li:nth-child(4){
+.logo-right ul li:last-child{
 	border-right:none;
 	border-top-right-radius:5px;
 	border-bottom-right-radius:5px;
