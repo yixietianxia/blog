@@ -52,9 +52,8 @@
 						<ul>
 							{% for post in site.posts %}
 								{% if post.category == "java"%}
-									abcddsdafsdfas
+									<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 								{% endif %} 
-　　　　　　						<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　　　						{% endfor %}
 						</ul>
 					</div>

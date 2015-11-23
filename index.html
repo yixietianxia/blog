@@ -34,16 +34,20 @@ title: JAVA技术相关
 						<h3>JAVA技术</h3>
 						<ul>
 							{% for post in site.posts %}
-　　　　　　						<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　　　						{% endfor %}
+								{% if post.category == "java"%}
+　　　　　　							<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　							{% endif %}
+							{% endfor %}
 						</ul>
 					</div>
 					<div class="recent-com">
 						<h3>技术沉淀</h3>
 						<ul>
 							{% for post in site.categories.CATEGORY %}
-　　　　　　						<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　　　						{% endfor %}
+								{% if post.category == "cd"%}
+　　　　　　							<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　							{% endif %}
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
