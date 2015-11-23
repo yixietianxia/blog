@@ -1,6 +1,6 @@
 ---
 layout: index
-title: JAVA技术相关文章
+title: 数据库相关技术
 ---
 <!-- content -->
 	<div class="content">
@@ -12,7 +12,7 @@ title: JAVA技术相关文章
 						<h3>{{page.title}}</h3>
 						<ul>
 							{% for post in site.posts %}
-								{% if post.category == "java"%}
+								{% if post.category == "db"%}
 　　　　　　							<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　　　							{% endif %}
 							{% endfor %}
