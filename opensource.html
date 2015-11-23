@@ -1,0 +1,27 @@
+---
+layout: index
+title: 开源相关技术
+---
+<!-- content -->
+	<div class="content">
+	<div class="container">
+		<div class="content-text">	
+			<div class="categories" style="width: 99%;">
+				<div class="categ">
+					<div class="cat">
+						<h3>{{page.title}}</h3>
+						<ul>
+							{% for post in site.posts %}
+								{% if post.category == "ky"%}
+　　　　　　							<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　							{% endif %}
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+<!-- //content -->
