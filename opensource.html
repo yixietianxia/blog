@@ -13,7 +13,7 @@ title: 开源相关技术
 						<ul>
 							{% for post in site.posts %}
 								{% if post.category == "ky"%}
-　　　　　　							<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span style="padding-left: 50%;">{{page.date}}</span></li>
+　　　　　　							<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><span style="padding-left: 50%;">{{post.date}}</span></li>
 　　　　							{% endif %}
 							{% endfor %}
 						</ul>
