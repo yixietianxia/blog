@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: index
 title: JAVA技术相关
 ---
 　　<p>{{ page.title }}</p>
@@ -8,3 +8,153 @@ title: JAVA技术相关
 　　　　　　<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>{{ post.date | date_to_string }}</li>
 　　　　{% endfor %}
 　　</ul>
+
+<!-- content -->
+	<div class="content">
+	<div class="container">
+		<div class="content-text">	
+			<div class="title">
+				<div class="some-title">
+					<h3><a href="single.html">Some Tittle Goes Here</a></h3>
+				</div>
+				<div class="john">
+					<p><a href="#">John Doe</a><span>May.26.2011</span></p>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="tilte-grid">
+					<a href="single.html"><img src="images/1.jpg" alt=" " /></a>
+					<p class="vel"><a href="single.html">Phasellus vel arcu vitae neque sagittis aliquet ac at purus.
+					Vestibulum varius eros in dui sagittis non ultrices orci hendrerit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</a></p>
+					<p class="Sed">
+					<span><label>Sed euismod feugiat sodales.</label> Vivamus dui ipsum, laoreet 
+					vitae euismod sit amet, euismod ac est. Sed turpis massa,
+					convallis vitae facilisis eget, malesuada ullamcorper nibh. 
+					Nunc pulvinar augue non felis dictum ultricies. Donec lacinia, 
+					enim sit amet volutpat sodales, lorem velit fringilla metus, et
+					semper metus sapien non odio. Nulla facilisi.<a href="#" class="gravida">Praesent gravida suscipit leo,</a> 
+					eget fermentum magna malesuada ac. Maecenas pulvinar malesuada elementum.</span></p> 
+				</div>
+				<div class="read">
+					<a href="single.html">Read More</a>
+				</div>
+				<div class="border">
+					<p>a</p>
+				</div>
+				<div class="some-title">
+					<h3><a href="single.html">Some Tittle Goes Here</a></h3>
+				</div>
+				<div class="john">
+					<p><a href="#">John Doe</a><span>May.26.2011</span></p>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="tilte-grid">
+					<a href="single.html"><img src="images/2.jpg" alt=" " /></a>
+					<p class="vel"><a href="single.html">Phasellus vel arcu vitae neque sagittis aliquet ac at purus.
+					Vestibulum varius eros in dui sagittis non ultrices orci hendrerit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+					<p class="Sed"><span><label>Sed euismod feugiat sodales.</label> Vivamus dui ipsum, laoreet 
+					vitae euismod sit amet, euismod ac est. Sed turpis massa,
+					convallis vitae facilisis eget, malesuada ullamcorper nibh. 
+					Nunc pulvinar augue non felis dictum ultricies. Donec lacinia, 
+					enim sit amet volutpat sodales, lorem velit fringilla metus, et
+					semper metus sapien non odio. Nulla facilisi.<a href="#" class="gravida">Praesent gravida suscipit leo,</a> 
+					eget fermentum magna malesuada ac. Maecenas pulvinar malesuada elementum.</span></p> 
+				</div>
+				<div class="read">
+					<a href="single.html">Read More</a>
+				</div>
+				<div class="border1">
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			
+			<div class="categories">
+				<div class="categ">
+					<div class="cat">
+						<h3>JAVA技术</h3>
+						<ul>
+							{% for post in site.posts %}
+　　　　　　						<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　						{% endfor %}
+						</ul>
+					</div>
+					<div class="recent-com">
+						<h3>技术沉淀</h3>
+						<ul>
+							{% for post in site.post2s %}
+　　　　　　						<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　						{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+<!-- //content -->
+
+
+
+<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<div class="footer-grids">
+			<div class="footer-grid">
+				<h3>About Us</h3>
+				<p>Nullam ac urna velit. Pellentesque in arcu tortor. 
+				Pellentesque nec est et elit varius pulvinar eget vitae sapien. 
+				Aenean vehicula accumsan gravida. Cum sociis natoque penatibus
+				et magnis dis parturient montes, nascetur ridiculus mus. Phasellus 
+				et lectus in urna consequat consectetur ut eget risus. Nunc augue diam, 
+				mattis eu tristique luctus, aliquam vitae massa. Praesent lacinia nisi 
+				sit amet risus cursus porta.</p>
+			</div>
+			<div class="footer-grid">
+				<h3>Site Page</h3>
+				<ul>
+					<li class="cap1"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="articles.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer-grid">
+				<h3>Praesent pharetra</h3>
+				<ul>
+					<li><a href="single.html">Vestibulum iaculis scelerisque</a></li>
+					<li><a href="single.html">Cras aliquam erat</a></li>
+					<li><a href="single.html">Morbi imperdiet ipsum</a></li>
+					<li><a href="single.html">Donec faucibus mollis</a></li>
+					<li><a href="single.html">Praesent lacinia nisi</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+	<div class="footer-bottom">
+	<div class="container">
+		<p>Template by<a href="http://w3layouts.com/"> w3layouts</a></p>
+	</div>
+	</div>
+<!-- //footer -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				*/
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+	</script>
+<!-- //here ends scrolling icon -->
