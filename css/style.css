@@ -103,7 +103,7 @@ padding:0;
 /*-- //header --*/
 /*-- content --*/
 .content{
-	background:#E7E2D0 url(../images/banner.png) no-repeat -14em 0px;
+	background:#E7E2D0 ;
 	min-height: 1100px;
 	position: relative;
 	}
