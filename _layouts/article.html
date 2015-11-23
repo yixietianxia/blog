@@ -48,10 +48,9 @@
 			<div class="categories">
 				<div class="categ">
 					<div class="cat">
-						<h3>JAVA技术</h3>
+						<h3>关联文章列表</h3>
 						<ul>
 							{% for post in site.posts %}
-							{{page}}
 								{% if post.category == page.category%}
 									<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 								{% endif %} 
