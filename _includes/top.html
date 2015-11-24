@@ -8,28 +8,16 @@
 			<div class="logo-right">
 				<span class="menu"><img src="images/menu.png" alt=" "/></span>
 				<ul class="nav1">
-					<li><a id="" href="/blog/index.html">首页</a></li>
-					<li><a id="java" href="/blog/javalist.html">JAVA</a></li>
-					<li><a id="db" href="/blog/db.html">数据库</a></li>
-					<li><a id="fw" href="/blog/fw.html">架构</a></li>
-					<li><a id="web" href="/blog/web.html">前端</a></li>
-					<li><a id="ky" href="/blog/opensource.html">开源技术</a></li>
-					<li><a id="me" href="/blog/aboutme.html">关于个人</a></li>
+					<li><a id="index" href="/blog/index.html">首页</a></li>
+					<li><a id="indexjava" href="/blog/javalist.html">JAVA</a></li>
+					<li><a id="indexdb" href="/blog/db.html">数据库</a></li>
+					<li><a id="indexfw" href="/blog/fw.html">架构</a></li>
+					<li><a id="indexweb" href="/blog/web.html">前端</a></li>
+					<li><a id="indexky" href="/blog/opensource.html">开源技术</a></li>
+					<li><a id="indexme" href="/blog/aboutme.html">关于个人</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
-			<script type="text/javascript"> 
-				$(".navl li a").each(function(index,doc){
-					if($(this).attr("id")=={{page.category}}){
-						$(this).attr({"color":"red"});
-					}
-				});
-				$( "span.menu" ).click(function() {
-				$( "ul.nav1" ).slideToggle( 300, function() {
-				 // Animation complete.
-				});
-				});
-			 </script>
 		</div>
 	</div>
 	</div>

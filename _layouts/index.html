@@ -25,5 +25,17 @@
 {%include top.html %}
 {{content}}
 {%include bottom.html %}
+<script type="text/javascript"> 
+	$(".navl li a").each(function(index,doc){
+		if($(this).attr("id")=="index"+{{page.category}}){
+			$(this).attr({"color":"red"});
+		}
+	});
+	$( "span.menu" ).click(function() {
+	$( "ul.nav1" ).slideToggle( 300, function() {
+	 // Animation complete.
+	});
+	});
+ </script>
 </body>
 </html>
