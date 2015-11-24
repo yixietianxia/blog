@@ -37,10 +37,19 @@
 				<div class="clearfix"> </div>
 				<div class="border">
 				    <div style="float: left; width: 50%;margin-left: 50px;">
-				    	<a href="{{ site.baseurl }}{{page.previous.url}}">上一篇:{{page.previous.title}}</a>
+				    	{% if page.previous.title=="" %}
+				  			<span>上一篇:【无】</span>
+				  		{% else %}
+				  			<a href="{{ site.baseurl }}{{page.next.url}}">上一篇:{{page.previous.title}}</a>
+				  		{% endif%}
 				    </div>
 				  	<div style="margin-left: 50%;text-align: right;margin-right: 50px;">
-				  		<a href="{{ site.baseurl }}{{page.next.url}}">下一篇:{{page.next.title}}</a>
+				  		{% if page.next.title=="" %}
+				  			<span>下一篇:【无】</span>
+				  		{% else %}
+				  			<a href="{{ site.baseurl }}{{page.next.url}}">下一篇:{{page.next.title}}</a>
+				  		{% endif%}
+				  		
 				  	</div>
 				</div>
 			</div>
