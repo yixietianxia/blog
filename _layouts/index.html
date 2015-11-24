@@ -27,6 +27,7 @@
 {%include bottom.html %}
 <script type="text/javascript"> 
 	$(".navl li a").each(function(index,doc){
+		alert($(this).attr("id"));
 		if($(this).attr("id")=="index"{{page.category}}){
 			$(this).attr({"color":"red"});
 		}
