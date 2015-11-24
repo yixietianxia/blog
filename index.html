@@ -16,7 +16,7 @@ title: JAVA技术相关
 				</div>
 				<div class="clearfix"> </div>
 				<div class="tilte-grid">
-					{{post.content|truncatechars:120}}
+					{{post.content|prettyprint | truncate: 200}}
 				</div>
 				<div class="read">
 					<a href="{{ site.baseurl }}{{ post.url }}">更多</a>
