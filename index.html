@@ -40,6 +40,18 @@ title: JAVA技术相关
 							{% endfor %}
 						</ul>
 					</div>
+					
+					<div class="cat">
+						<h3>架构设计</h3>
+						<ul>
+							{% for post in site.posts %}
+								{% if post.category == "fw"%}
+　　　　　　							<li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　							{% endif %}
+							{% endfor %}
+						</ul>
+					</div>
+					
 					<div class="recent-com">
 						<h3>开源技术</h3>
 						<ul>
