@@ -18,19 +18,18 @@
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
-					<script> 
-						$( "span.menu" ).click(function() {
-						$( "ul.nav1" ).slideToggle( 300, function() {
-						 // Animation complete.
-						});
-						});
-						
-						$(".navl li a").each(function(index,doc){
-							if($(this).attr("id")=={{page.category}}){
-								$(this).attr({"color":"red"});
-							}
-						});
-					</script>
+			<script type="text/javascript"> 
+				$(".navl li a").each(function(index,doc){
+					if($(this).attr("id")=={{page.category}}){
+						$(this).attr({"color":"red"});
+					}
+				});
+				$( "span.menu" ).click(function() {
+				$( "ul.nav1" ).slideToggle( 300, function() {
+				 // Animation complete.
+				});
+				});
+			 </script>
 		</div>
 	</div>
 	</div>
