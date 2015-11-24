@@ -10,8 +10,8 @@
 <meta name="keywords" content="java,JAVA,技术,架构师,java基础,java学习,java技术,java研究" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="/blog/js/move-top.js"></script>
+<script type="text/javascript" src="/blog/js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -27,7 +27,7 @@
 {%include bottom.html %}
 <script type="text/javascript"> 
 	$(".navl li a").each(function(index,doc){
-		if($(this).attr("id")=="index"+{{page.category}}){
+		if($(this).attr("id")=="index"{{page.category}}){
 			$(this).attr({"color":"red"});
 		}
 	});
