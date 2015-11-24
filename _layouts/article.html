@@ -67,7 +67,7 @@
 {%include bottom.html %}
 <script type="text/javascript"> 
 	$(".nav1 li a").each(function(index,doc){
-		if($(this).attr("id")=="index"{% page.category %}){
+		if($(this).attr("id")=="index"{{ page.category }}){
 			$(this).attr({"style":"color:red"});
 	});
 	$( "span.menu" ).click(function() {
