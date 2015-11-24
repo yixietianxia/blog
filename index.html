@@ -7,7 +7,7 @@ title: JAVA技术相关
 	<div class="container">
 		<div class="content-text">	
 			<div class="title">
-				{% for post in site.posts|slice:":5" %}
+				{% for post in site.posts %}
 				<div class="some-title">
 					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
 				</div>
@@ -16,7 +16,7 @@ title: JAVA技术相关
 				</div>
 				<div class="clearfix"> </div>
 				<div class="tilte-grid">
-					{{post.content|slice:"30"}}
+					{{post.content|truncatechars:120}}
 				</div>
 				<div class="read">
 					<a href="{{ site.baseurl }}{{ post.url }}">更多</a>
