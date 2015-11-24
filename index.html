@@ -7,7 +7,7 @@ title: JAVA技术相关
 	<div class="container">
 		<div class="content-text">	
 			<div class="title">
-				{% for post in site.posts %}
+				{% for post in site.posts|slice:"5" %}
 				<div class="some-title">
 					<h3><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
 				</div>
