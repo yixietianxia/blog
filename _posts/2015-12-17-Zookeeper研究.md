@@ -85,3 +85,5 @@ desc: ZooKeeper 是一个为分布式应用所设计的分布的、开源的协�
 
 #####7.dubbo与zookeeper
       dubbo里用的zookeeper客户端是zkclient，它比zookeeper自己携带的客户端更加强大。
+      
+更加详细信息见[**IBM**](http://www.ibm.com/developerworks/cn/opensource/os-cn-zookeeper/)
