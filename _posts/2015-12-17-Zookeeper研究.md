@@ -2,7 +2,7 @@
 layout: article
 title: Zookeeper研究
 category: ky
-desc: <p style="font-size:14px; color:chocolate;">  ZooKeeper 是一个为分布式应用所设计的分布的、开源的协调服务。分布式的应用可以建立在同步、配置管理、分组和命名等服务的更高级别的实现的基础之上。 ZooKeeper 意欲设计一个易于编程的环境，它的文件系统使用我们所熟悉的目录树结构。</p>
+desc: ZooKeeper 是一个为分布式应用所设计的分布的、开源的协调服务。分布式的应用可以建立在同步、配置管理、分组和命名等服务的更高级别的实现的基础之上。 ZooKeeper 意欲设计一个易于编程的环境，它的文件系统使用我们所熟悉的目录树结构。
 ---
 * ###Zookeeper研究
 #####1.什么叫zookeeper
